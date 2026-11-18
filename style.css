@@ -1,0 +1,133 @@
+
+/* General Styling */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f6fa;
+    color: #333;
+    margin: 0;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #243b55, #456b91);
+    color: white;
+    padding: 85px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* Section Titles */
+.section-title {
+    color: #243b55;
+    font-weight: bold;
+}
+
+/* Blog Cards */
+.blog-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.blog-card .card-title {
+    color: #243b55;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.blog-card .card-text {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* About Section */
+.about-section {
+    background-color: #e9eef5;
+}
+
+.about-section h2 {
+    color: #243b55;
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+/* Footer */
+footer {
+    font-size: 14px;
+}
+
+/* Tablet Screens */
+@media (max-width: 768px) {
+    .hero {
+        padding: 65px 15px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .blog-card img {
+        height: 200px;
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 576px) {
+    .hero {
+        padding: 50px 15px;
+    }
+
+    .hero h1 {
+        font-size: 27px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .blog-card img {
+        height: 190px;
+    }
+
+    .section-title {
+        font-size: 25px;
+    }
+}
